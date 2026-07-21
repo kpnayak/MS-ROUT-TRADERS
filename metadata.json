@@ -1,0 +1,6 @@
+{
+  "name": "M/S Rout Traders - Solar Panel Installation",
+  "description": "Production-ready residential solar panel consultation and installation vendor website for M/S Rout Traders",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
