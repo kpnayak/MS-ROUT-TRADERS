@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/ms-rout-traders/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
