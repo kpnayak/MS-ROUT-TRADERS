@@ -81,11 +81,13 @@ export default function App() {
   const navigateTo = (route: 'public' | 'admin-login' | 'admin-dashboard') => {
     setCurrentRoute(route);
     if (route === 'admin-login') {
-      window.history.pushState(null, '', '/admin/login');
+      window.location.hash = '#/admin/login';
     } else if (route === 'admin-dashboard') {
-      window.history.pushState(null, '', '/admin/dashboard');
+      window.location.hash = '#/admin/dashboard';
     } else {
-      window.history.pushState(null, '', '/');
+      if (window.location.hash) {
+        window.history.pushState(null, '', window.location.pathname);
+      }
     }
   };
 
